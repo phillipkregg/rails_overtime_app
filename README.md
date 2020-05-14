@@ -7,7 +7,7 @@ Key requirement: Company needs documentation that salaried employees did or did 
 - User -> Devise
 - AdminUser -> STI
 
-Features:
+## Features:
 - Approval workflow
 - SMS Sending -> link to approval or overtime input
 - Administrative admin dashboard
