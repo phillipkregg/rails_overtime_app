@@ -33,3 +33,6 @@ group :test do
 end
 
 gem "tzinfo-data"
+
+# Custom
+gem "devise", "~> 4.2"
