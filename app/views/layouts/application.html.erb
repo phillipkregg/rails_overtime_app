@@ -8,12 +8,20 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body class="container">
-    <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
-      Tooltip on top
-    </button>
-    <%= link_to 'Sign out', destroy_user_session_path, :method => :delete %>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <%= yield %>
+
+    <div class="row">
+      <div class="col-md-12">
+        <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+          Tooltip on top
+        </button>
+
+        <p class="notice"><%= notice %></p>
+        <p class="alert"><%= alert %></p>
+        <%= render 'shared/nav'%>
+
+        <%= yield %>
+      </div>
+    </div>
+
   </body>
 </html>
